@@ -1,0 +1,166 @@
+
+@font-face {
+  font-family: "Nunito";
+  src:url('./assets/font/body-Nunito/Nunito-Regular.ttf');
+}
+@font-face {
+  font-family: "NunitoBold";
+  src: local("NunitoBold"),
+   url('./assets/font/body-Nunito/Nunito-Bold.ttf');
+  font-weight:bold;
+}
+@font-face {
+  font-family: "FjallaOne";
+  src: url('./assets/font/heading-Fjalla_One/FjallaOne-Regular.ttf');
+  font-weight:bold;
+}
+body{
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+.font-menu{
+  font-family: "NunitoBold"
+}
+.heading{
+  font-family: "FjallaOne";
+}
+
+.Banner{
+    height:80vh;
+    width:100%;
+    background: url("./assets/img/bg-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Join-us{
+  z-index: 2;
+  margin-top:-80px
+}
+.Partner{
+  width:100%;
+  height:35vh;
+  background: url("./assets/img/bg-partner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  padding-top:5em;
+}
+.Member{
+  width:100%;
+  height:35vh;
+  background: url("./assets/img/bg-member.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+  padding-top:5em;
+}
+.About-us{
+  margin-top:2em
+}
+.About-us .bg-About{
+  background: url("./assets/img/bg-about-us.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:50vh;
+  width:100%;
+  padding-left: 5em;
+}
+.Our-partner{
+  margin-top:5em;
+  margin-bottom:5em
+}
+footer{
+  width: 100%;
+  height:40vh;
+}
+@media only screen and (max-width:425px){
+  .change-lang{
+    left:"none"!important;
+    top:"none"!important;
+    position: static !important;
+    margin-left:-20px;
+  }
+  .Banner{
+    height:80vh;
+    width:100%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.722), rgba(255, 255, 255, 0.722)), url("./assets/img/bg-banner.png");
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 1em;
+  }
+  .Banner h1{
+    font-size: 4em;
+  }
+  .Banner p{
+    width: 90%!important;
+    font-size: 1.5em!important;
+  }
+  .Join-us .Join-us-flex{
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:0px 15px
+  }
+  .Join-us .Partner{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .Join-us .Member{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .About-us{
+    padding:0px 15px
+  }
+  .About-us .bg-About{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.722), rgba(255, 255, 255, 0.722)),  url("./assets/img/bg-about-us.png");
+    background-position: right 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:20vh;
+    width:100%;
+    padding-left: 1em;
+
+  }
+  .bg-About h1{
+    font-size: 2.1em;
+  }
+  .bg-About p{
+    width: 90%!important;
+    font-size: 14px!important;
+  }
+  .Our-partner h1{
+    font-size:4em
+  }
+  .Our-partner h3{
+    font-size:3em
+  }
+  .Our-partner .icon-slider{
+    font-size: 3em !important;
+  }
+  .Our-partner .button{
+    margin-bottom: 1em !important;
+  }
+  .Our-partner .img-partner{
+    flex-wrap: nowrap !important;
+    overflow-x: hidden;
+  }
+  footer{
+    height:60vh;
+  }
+  footer .footer-flex{
+    flex-direction: column;
+  }
+  footer .footer-flex .footer-col{
+    align-items: flex-start!important;
+  }
+
+}
